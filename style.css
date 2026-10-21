@@ -1,0 +1,52 @@
+:root{--ink:#1B2A1F;--ink-soft:#4F5F53;--paper:#F7F4EC;--paper-2:#EDE8DB;--moss:#2F4A3A;--rust:#B5532A;--line:#D9D2C0;--band:#1F3328;--band-ink:#EDE8DB;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root{--ink:#EDE8DB;--ink-soft:#B7B3A4;--paper:#131A15;--paper-2:#1C261F;--line:#2E3B32;--band:#0E1511}}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans","Segoe UI",Roboto,system-ui,sans-serif;font-size:1.0625rem;line-height:1.65}
+a{color:var(--ink);text-decoration-color:var(--rust);text-decoration-thickness:2px;text-underline-offset:3px}
+a:hover{color:var(--rust)}
+a:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
+img{max-width:100%;display:block;height:auto}
+.wrap{max-width:66rem;margin:0 auto;padding:0 1.5rem}
+header{padding:1.5rem 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.2rem;text-decoration:none;letter-spacing:-0.01em}
+.brand small{display:block;font-weight:500;font-size:0.85rem;color:var(--ink-soft);letter-spacing:0}
+nav a{margin-left:1.25rem;text-decoration:none;color:var(--ink-soft);font-size:0.95rem}
+nav a:first-child{margin-left:0}
+.hero{padding:3.5rem 0 3rem}
+.eyebrow{font-size:0.85rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--rust);margin:0 0 1rem}
+h1{font-size:clamp(2.2rem,5.6vw,4.2rem);line-height:1.02;letter-spacing:-0.03em;font-weight:800;margin:0 0 1.25rem;max-width:18ch}
+.lede{font-size:clamp(1.1rem,1.9vw,1.35rem);line-height:1.5;margin:0 0 1rem;max-width:44ch;color:var(--ink-soft)}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;font-weight:800;margin:0 0 1.5rem;letter-spacing:-0.02em}
+.body p{margin:0 0 1.1rem;max-width:64ch}
+.body p:last-child{margin-bottom:0}
+.entries{list-style:none;padding:0;margin:0;display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr))}
+.entries li{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper-2)}
+.entries a{display:block;text-decoration:none;height:100%}
+.entries img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.entries .card{padding:1rem 1.1rem 1.2rem}
+.entries time{font-size:0.85rem;color:var(--ink-soft);display:block;margin-bottom:0.3rem}
+.entries h3{margin:0 0 0.35rem;font-size:1.15rem;letter-spacing:-0.015em}
+.entries p{margin:0;font-size:0.95rem;color:var(--ink-soft)}
+.tag{display:inline-block;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--rust);margin-bottom:0.5rem}
+.band{background:var(--band);color:var(--band-ink);border-top:0}
+.band h2{color:var(--band-ink)}
+.band p{color:var(--band-ink);opacity:.92}
+.links{display:flex;flex-wrap:wrap;gap:0.6rem;list-style:none;padding:0;margin:1rem 0 0}
+.links a{display:inline-block;padding:0.5rem 0.95rem;border:1px solid var(--line);border-radius:999px;text-decoration:none;font-weight:500;font-size:0.95rem}
+.links a:hover{border-color:var(--rust)}
+article.entry{padding:3rem 0}
+article.entry .meta{color:var(--ink-soft);font-size:0.95rem;margin:0 0 1.5rem}
+article.entry h1{font-size:clamp(2rem,4.5vw,3.2rem)}
+.photos{display:grid;gap:0.75rem;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));margin:2rem 0}
+.photos figure{margin:0}
+.photos img{border-radius:10px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.photos figcaption{font-size:0.85rem;color:var(--ink-soft);margin-top:0.35rem}
+.photos .tall img{aspect-ratio:3/4}
+.byline{display:flex;align-items:center;gap:0.8rem;margin:2.5rem 0 0;padding-top:1.5rem;border-top:1px solid var(--line);font-size:0.95rem;color:var(--ink-soft)}
+.byline img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.pager{display:flex;justify-content:space-between;gap:1rem;margin-top:2rem;font-size:0.95rem}
+footer{padding:2.5rem 0 3rem;border-top:1px solid var(--line);color:var(--ink-soft);font-size:0.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+@media (max-width:48rem){nav a{margin-left:1rem}}
